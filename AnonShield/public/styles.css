@@ -1,0 +1,245 @@
+/* styles.css */
+
+body {
+    background-color: #000;
+    background-image: url('https://cdn.glitch.global/aa1faff1-ccd8-48e2-8bf1-fc0b128ace54/StealthGuard%20OS%20(1).png?v=1682936880450');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .terminal-container {
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .terminal-header {
+    background-color: #555;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #eee;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .terminal-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .terminal-output {
+    padding: 10px;
+    overflow-y: auto;
+    height: 300px;
+    white-space: pre-wrap;
+    font-size: 14px;
+    color: #eee;
+  }
+  
+  .terminal-input-container {
+    display: flex;
+    padding: 0 10px 10px;
+  }
+  
+  .prompt {
+    color: #4af626;
+    font-size: 14px;
+  }
+  
+  .terminal-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #eee;
+    font-size: 14px;
+    flex-grow: 1;
+  }
+  
+  .terminal-header .terminal-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .terminal-header .terminal-icon img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .terminal-buttons {
+    display: flex;
+  }
+  
+  .minimize-terminal,
+  .close-terminal {
+    background-color: transparent;
+    border: none;
+    color: #eee;
+    font-size: 12px;
+    padding: 0 5px;
+    cursor: pointer;
+  }
+  
+  .minimize-terminal:hover,
+  .close-terminal:hover {
+    background-color: #777;
+  }
+  
+  #taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .taskbar-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 10px;
+  }
+  
+  .taskbar-button img {
+    height: 24px;
+    width: 24px;
+  }
+  
+  #browser-window {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 800px;
+    height: 600px;
+    border: 1px solid #ccc;
+    background-color: white;
+  }
+  
+  #browser-header {
+    cursor: move;
+  }
+  
+  #browser-header button:hover {
+    background-color: #777;
+  }
+  
+  #browser {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  #browser img {
+    width: 100%;
+    height: 100%;
+  }
+  .wallpaper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #taskbar button:hover {
+    transform: scale(1.1);
+  }
+  #taskbar-clock {
+    padding: 0.25rem 0.5rem;
+    color: white;
+    font-size: 0.9rem;
+    margin-left: auto;
+  }
+  
+  #clock {
+    display: inline-block;
+  }
+  /* Add styles for the start button */
+  .taskbar-button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .taskbar-button img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    padding: 5px;
+  }
+  
+  .taskbar-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Add styles for the start button active state */
+  .taskbar-button.active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* ... */
+  
+  .desktop-icon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+  
+  .desktop-icon img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .desktop-icon img {
+    width: 48px;
+      touch-action: none; /* Add this line */
+    height: 48px;
+    display: block;
+    margin-bottom: 5px;
+    pointer-events: none; /* Add this line */
+  }
+  
+  

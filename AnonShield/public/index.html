@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+  <div id="taskbar">
+    <button id="browser" class="taskbar-button">
+      <img src="https://cdn.glitch.global/aa1faff1-ccd8-48e2-8bf1-fc0b128ace54/AnonShield-removebg-preview.png?v=1682805029067" alt="Browser" />
+    </button>
+    <button id="toggle-terminal" class="taskbar-button">
+      <img src="https://cdn.glitch.global/aa1faff1-ccd8-48e2-8bf1-fc0b128ace54/preview.png?v=1682801468952" alt="Terminal" />
+    </button>
+    <div id="taskbar-clock">
+      <span id="clock"></span>
+    </div>
+  </div>
+
+  <div class="terminal-container" id="terminal">
+    <div class="terminal-header">
+      <span>Terminal</span>
+      <div class="terminal-buttons">
+        <button id="minimize-terminal" class="minimize-terminal">_</button>
+        <button id="close-terminal" class="close-terminal">x</button>
+      </div>
+    </div>
+    <div class="terminal-content">
+      <div id="terminal-output" class="terminal-output"></div>
+      <div class="terminal-input-container">
+        <span class="prompt">user@website:~$</span>
+        <input id="terminal-input" class="terminal-input" type="text" autofocus />
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script src="browser.js"></script>
+  <script src="desktop.js"></script> <!-- Add a new script file for the start menu -->
+</body>
+</html>
